@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -17,7 +16,7 @@ class CalculadoraNotasTest {
     @CsvSource({
             "5.0, 5.0, 5.0, 5.0",
             "0.0, 0.0, 0.0, 0.0",
-            "3.0, 3.0, 3.0, 3.0",
+            "3.0, 3.0, 3.0, 9.9",
             "4.0, 3.5, 2.0, 3.1", // 3.05 se redondea hacia arriba
             "2.0, 2.5, 3.5, 2.8"
     })
